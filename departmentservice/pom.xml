@@ -10,7 +10,6 @@
 	</parent>
 	<groupId>com.example.department.service</groupId>
 	<artifactId>departmentservice</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>departmentservice</name>
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
