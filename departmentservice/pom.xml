@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2022.0.0</spring-cloud.version>
+		<jshift.openshift.version>0.1.0</jshift.openshift.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -88,6 +89,11 @@
 						</manifest>
 					</archive>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>io.jshift</groupId>
+				<artifactId>oc-maven-plugin</artifactId>
+				<version>${jshift.openshift.version}</version>
 			</plugin>
 		</plugins>
 	</build>
