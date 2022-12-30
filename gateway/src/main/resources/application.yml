@@ -8,14 +8,16 @@ spring:
     gateway:
       routes:
         - id: USER-SERVICE
-          uri: http://userservice/
+          uri: lb://USER-SERVICE
           predicates:
             - Path=/users/**
         - id: DEPARTMENT-SERVICE
-          uri: http://departmentservice/
+          uri: lb://DEPARTMENT-SERVICE
           predicates:
             - Path=/departments/**
-
+    kubernetes:
+      loadbalancer:
+        mode : SERVICE
 
 
 eureka:
