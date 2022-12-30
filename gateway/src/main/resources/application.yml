@@ -8,11 +8,11 @@ spring:
     gateway:
       routes:
         - id: USER-SERVICE
-          uri: lb://USER-SERVICE
+          uri: http://userservice/
           predicates:
             - Path=/users/**
         - id: DEPARTMENT-SERVICE
-          uri: lb://DEPARTMENT-SERVICE
+          uri: http://departmentservice/
           predicates:
             - Path=/departments/**
 
